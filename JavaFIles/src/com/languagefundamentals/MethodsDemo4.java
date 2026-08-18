@@ -25,7 +25,7 @@ public class MethodsDemo4 {
 		System.out.println("Enter the age: ");
 		int age = sc.nextInt();
 
-		if (age > 12) {
+		if (age < 13) {
 			System.out.println("You are a child");
 		} 
 		else if (age <=19) {
@@ -34,7 +34,7 @@ public class MethodsDemo4 {
 		else if(age<=59) {
 			System.out.println("You are a Adult");
 		}
-		else if(age>=60){
+		else {
 			System.out.println("You are a senior citizen");
 		}
 	}
@@ -43,6 +43,18 @@ public class MethodsDemo4 {
 /*
 Output:-
 Enter the age: 
+8
+You are a child
+
+Enter the age: 
 13
 You are a Teenager
+
+Enter the age: 
+20
+You are a Adult
+
+Enter the age: 
+70
+You are a senior citizen
 */
