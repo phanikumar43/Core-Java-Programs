@@ -43,5 +43,6 @@ public class Switch1 {
 			yn = sc.next();
 		} while (yn.equalsIgnoreCase("Y"));
 		sc.close();
+		System.out.println("Exit ");
 	}
 }
