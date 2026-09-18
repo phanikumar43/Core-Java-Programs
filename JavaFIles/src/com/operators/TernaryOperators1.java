@@ -20,17 +20,17 @@ import java.util.Scanner;
 public class TernaryOperators1 {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the Student Marks: ");
-		int marks=sc.nextInt();
-		String marks1=(marks < 0 || marks > 100) ? "Invalid marks" :
-            (marks >= 91) ? "S Grade" :
-            (marks >= 81) ? "A Grade" :
-            (marks >= 71) ? "B Grade" :
-            (marks >= 51) ? "C Grade" :
-            (marks >= 41) ? "D Grade" :
-            (marks >= 35) ? "E Grade" : "Failed";
-		System.out.println("Student Result is: "+marks1);
+		int marks = sc.nextInt();
+		String marks1 = (marks < 0 || marks > 100) ? "Invalid"
+				: (marks >= 91) ? "S Grade"
+						: (marks >= 81) ? "A Grade"
+								: (marks >= 71) ? "B Grade"
+										: (marks >= 51) ? "C Grade"
+												: (marks >= 41) ? "D Grade" : 
+													(marks >= 35) ? "Fail" : "Try Next Time";
+		System.out.println("Student Result is: " + marks1);
 		sc.close();
 	}
 }

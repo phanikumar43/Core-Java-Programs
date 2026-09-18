@@ -116,6 +116,7 @@ public class CinemaCounter {
 				} while (syn.equalsIgnoreCase("Y"));
 			}
 			}
+			sc.close();
 			System.out.println("Do You Want to Continue..if Yes click 'Y' (or) If No Click 'N' ");
 			myn = sc.next();
 		} while (myn.equalsIgnoreCase("Y"));

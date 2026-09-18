@@ -124,6 +124,7 @@ public class NaukriHiringProcess {
 			System.out.println("Thank You For The Valuable Time");
 			System.out.println(name);
 		}
+		sc.close();
 
 	}
 
