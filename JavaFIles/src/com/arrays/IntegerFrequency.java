@@ -18,7 +18,7 @@ public class IntegerFrequency {
 					arr1[j] = true;
 				}
 			}
-			System.out.println(arr[i] + "count" + count);
+			System.out.println(arr[i] + " count = " + count);
 		}
 	}
 }
