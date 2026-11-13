@@ -20,29 +20,21 @@ package com.oops;
 
 public class CircularArray {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        int arr[] = {1,4,3,6};
-        int n = arr.length;
-
-        for (int i = 0; i < n; i++) {
-
-            int max = -1;
-
-            for (int j = 1; j < n; j++) {
-
-                int index = (i + j) % n;
-
-                if (arr[index] > arr[i]) {
-
-                    if (arr[index] > max) {
-                        max = arr[index];
-                    }
-                }
-            }
-
-            System.out.println(max);
-        }
-    }
+		int arr[] = { 1, 4, 3, 6 };
+		int n = arr.length;
+		for (int i = 0; i < n; i++) {
+			int max = -1;
+			for (int j = 1; j < n; j++) {
+				int index = (i + j) % n;
+				if (arr[index] > arr[i]) {
+					if (arr[index] > max) {
+						max = arr[index];
+					}
+				}
+			}
+			System.out.println(max);
+		}
+	}
 }
-
