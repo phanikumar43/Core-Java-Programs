@@ -31,18 +31,44 @@ package com.oops.abstraction;
 public abstract interface Animal {
 
 	public abstract void sound();
-	
+
 	public abstract void eat();
-	
+
 	public abstract void walk();
-	
-	//Backward-Compatibility	
-	default void sleep() {
+
+	// default methods can helpful to avoid backward compatibility Problems
+	// Q)Can we over-ride default methods..? Yes
+	// Backward-Compatibility
+	public default void sleep() {
 		System.out.println("Animals can sleep...");
+		hello();
+	}
+
+	public default void run() {
+		System.out.println("Animals can run..");
+		hello();
+	}
+
+	// static methods are helpful to provide constant utility behaviour for all the
+	// classes
+	// static methods we cannot override.
+	public static void breath() {
+		System.out.println("Animals must breath !!");
+	}
+
+	// private methods introduced from 1.9 to avoid duplicate code in default
+	// methods.
+	// Because ,private methods we cannot override.
+	private void hello() {
+		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
 	}
 
 	public static void main(String[] args) {
 		System.out.println("Main Method Started");
-
 	}
 }
