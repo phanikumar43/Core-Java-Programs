@@ -56,6 +56,7 @@ public class LabExceptionHandling {
 		}
 		
 		//Enter a string instead of an integer for student marks.
+		//NumberFormatException
 		try {
 			String num="one";
 			System.out.println(Integer.parseInt(num));
